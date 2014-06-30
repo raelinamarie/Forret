@@ -1,6 +1,7 @@
 @extends('Frontend::layouts.default')
 
 @section('page_styles')
+style
 @stop
 
 @section('content')
