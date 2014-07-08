@@ -29,7 +29,7 @@ p {
     margin: 0 0 25px;
     font-size: 18px;
     line-height: 1.5;
-}
+} narroe
 
 @media(min-width:767px) {
     p {
@@ -138,7 +138,7 @@ a:focus {
     display: auto;
     width: 50%;
     height: 300px;
-    background: url(../img/IT01.gif) no-repeat;
+    background: url(../img/02triangle.gif) no-repeat;\
 }
 
 .intro-body {
