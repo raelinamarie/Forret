@@ -1,19 +1,19 @@
 <?php  namespace Controllers\Frontend;
 
 use Forret\Interfaces\UserInterface;
-use \Input;
 use Sentry;
 use \View;
 
 class DashboardController extends BaseController {
+    /** @var \Forret\Repositories\UserRepository  */
+    protected $user;
     public function __construct(UserInterface $user){
         $this->user = $user;
-
     }
     public function index() {
         if(Sentry::check()){
             $auth_navbar = true;
-            $user = $this->user->getCurrentSentryUser();
+            $user = Sentry::getUser();
         }
         else{
             $auth_navbar = false;
